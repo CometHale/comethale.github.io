@@ -1,39 +1,38 @@
+<!DOCTYPE html>
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<script type="text/javascript">
-	
-</script>
-
-<style type="text/css">
-	
-	html{
-		height:100%;
-		background-color:#320A28;
-	}
-	
-	body{
-		margin-left: 10%;
-		margin-right: 10%;
-		height:100%;
-		background-color:#0B1D51;
-		border-style: solid;
-		border-radius: 25px;
-		border-color:#D7F9F1;	
-	}
-	h2{
-		text-align: center;
-		color:#EEC643;
-	}
-	
-</style>
-
 <html>
+	
     <head>
         <title>Haley Sanders.</title>
+        {# Importing Bootstrap #}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        {# Font links #}
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|VT323" rel="stylesheet">
     </head>
+
+    <div class="nav">
+    	<ul>
+    		<a href="#about">About</a><b class="divider">&#8592;&#8594;</b>
+    		<a href="#portfolio">Portfolio</a><b class="divider">&#8592;&#8594;</b>
+    		<a href="#blog">Blog</a><b class="divider">&#8592;&#8594;</b>
+    		<a href="#contact">Contact</a>
+    	</ul>
+    </div>	
+
+    <div id="intro">
+    	<a id="intro" class="smooth"></a>
+    	<p id="intro-section">Hi, I'm <ins>Haley</ins>.</p>
+    	<p></p>
+    </div>
 
     <body>
     {% block content %}{% endblock content %}
     </body>
+
 </html>

@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Other Stuff
+.DS_Store
+stuff/
+port_secret.py

@@ -321,8 +321,6 @@ a:hover { text-decoration: underline; }
 
 section.header { background-color: #13293D; }
 
-footer { font-size: 10px; }
-
 .mdl-layout { background-image: url("../../assets/images/portfolio_background.jpg"); background-size: 100% 100%; background-repeat: no-repeat; height: 50px; }
 
 body, html { height: 100%; background-color: #13293D; }
@@ -333,15 +331,21 @@ h1.project-name { color: white; text-align: center; margin-top: 100px; }
 
 .sub-head { text-align: center; }
 
-h2 { text-align: center; color: #6C47BC; font-family: 'VT323', monospace; font-size: 60px; }
+.main-content { color: black; }
 
-h2#welcome-to-my-portfolio { color: #13293D; }
+h2 { text-align: center; color: black; font-family: 'VT323', monospace; font-size: 60px; }
+
+h2#about-me { color: #13293D; }
 
 p { font-family: 'Dosis', sans-serif; color: #BDD9BF; font-size: 20px; text-align: center; }
 
-span > a { color: #0B1D51; font-family: 'VT323', monospace; font-size: 20px; width: 200px; }
+span { color: black; }
 
-a:hover { color: #EEC643; }
+span.site-footer-credits { color: black; }
+
+span > a { color: #0B1D51; font-size: 20px; width: 200px; }
+
+a:hover { color: white; }
 
 b.divider { color: #084C61; font-size: 40px; }
 

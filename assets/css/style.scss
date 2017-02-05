@@ -13,10 +13,6 @@ section.header{
 	background-color:#13293D;
 }
 
-footer{
-	font-size: 10px;
-}
-
 .mdl-layout{
 	background-image:url("../../assets/images/portfolio_background.jpg");
 	background-size: 100% 100%;
@@ -44,14 +40,19 @@ h1.project-name{
 .sub-head{
 	text-align: center;
 }
+
+.main-content{
+	color:black;
+}
+
 h2{
 	text-align: center;
-	color:#6C47BC;
+	color:black;
 	font-family: 'VT323', monospace;
 	font-size: 60px;
 }
 
-h2#welcome-to-my-portfolio{
+h2#about-me{
 	color: #13293D;
 }
 p{
@@ -61,14 +62,20 @@ p{
 	text-align: center;
 }
 
+span {
+	color: black;
+}
+
+span.site-footer-credits{
+	color:black;
+}
 span > a{
 	color:#0B1D51;
-	font-family: 'VT323', monospace;
 	font-size: 20px;
     width: 200px;
 }
 a:hover {
-	color:#EEC643;
+	color:white;
 }
 
 b.divider {

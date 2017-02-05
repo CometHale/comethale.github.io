@@ -2,73 +2,58 @@
 ---
 
 @import "{{ site.theme }}";
-/* Permanent Nav */
+
 .main {
     padding: 16px;
     margin-top: 30px;
     height: 1500px; /* Used in this example to enable scrolling */
 }
 
-body {
-	margin:0;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 90%;
-    padding: 0;
-    overflow: hidden;
-    background-color: #BDD9BF;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
+section.header{
+	background-color:#13293D;
 }
 
 footer{
 	font-size: 10px;
 }
 
-/* End Permanent Nav*/
-
-/* Parallax */
-.parallax {
-	height:45%;
-	background: #0B1D51; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left top, #BDD9BF, #320A28); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, #BDD9BF, #320A28); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, #BDD9BF, #320A28); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom right, #BDD9BF, #320A28); /* Standard syntax */
-	background-attachment: fixed;
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.mdl-layout{
+	background-image:url("../../assets/images/portfolio_background.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 50px;
 }
-
-.non-para {
-	position:absolute;
-}
-
-.nav {
-	position:absolute;
-}
-
-/* End Parallax */
-
 
 body,html{
 	height:100%;
-	background-color:#BDD9BF;
+	background-color:#13293D;
 }
 
 
+.readme.mdl-card{
+	background-color: #7AC4A3;
+	width:800px;
+}
+
+h1.project-name{
+	color:white;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.sub-head{
+	text-align: center;
+}
 h2{
 	text-align: center;
-	color:#EEC643;
+	color:#6C47BC;
 	font-family: 'VT323', monospace;
 	font-size: 60px;
 }
 
+h2#welcome-to-my-portfolio{
+	color: #13293D;
+}
 p{
 	font-family: 'Dosis', sans-serif;
 	color:#BDD9BF;
@@ -76,15 +61,12 @@ p{
 	text-align: center;
 }
 
-a {
-	text-align: center;
+span > a{
 	color:#0B1D51;
 	font-family: 'VT323', monospace;
-	font-size: 25px;
-	display: block;
-    width: 150px;
+	font-size: 20px;
+    width: 200px;
 }
-
 a:hover {
 	color:#EEC643;
 }

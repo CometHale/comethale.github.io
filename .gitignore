@@ -92,3 +92,4 @@ ENV/
 .DS_Store
 stuff/
 port_secret.py
+*.tiff

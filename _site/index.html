@@ -8,36 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis|VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css?v=feb62594c6a67309803bc8779b296286be198a8c">
+    <link rel="stylesheet" href="/assets/css/style.css?v=a8ee626e8e5dc3b3379e7ff5abd1d580a5f94667">
 
-    <script type="text/javascript">
-      var about_me = $("#readme");
-      var portfolio = $("#portfolio");
-      var contact = $("#contact");
-
-      var about_me_link = $("#readme_link");
-      var portfolio_link  = $("#portfolio_link");
-      var contact_link  = $("#contact_link");
-
-      about_me_link.click(function(){
-        $('html, body').animate({
-            scrollTop: map.offset().top
-        }, 2000);
-      });
-
-      portfolio_link.click(function(){
-        $('html, body').animate({
-            scrollTop: map.offset().top
-        }, 2000);
-      });
-
-      contact_link.click(function(){
-        $('html, body').animate({
-            scrollTop: map.offset().top
-        }, 2000);
-      });
-
-    </script>
     <!-- Material Design Light Imports -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -49,13 +21,19 @@
       
       <div class="mdl-layout__drawer">
         <h1 class="project-name">Haley Sanders</h1>
-        <h3 class="sub-head"> Web Developer </h3>
+        <h3 class="sub-head"> Full Stack Developer </h3>
         <nav class="mdl-navigation">
-          <a id="portfolio_link" class="mdl-navigation__link" href="#">Portfolio</a>
-           <a id="resume_link" class="mdl-navigation__link" href="#">Resume</a>
-          <a id="readme_link" class="mdl-navigation__link" href="#">About</a>
-          <a id="contact_link" class="mdl-navigation__link" href="#">Contact</a>
+          <a id="intro_link" class="mdl-navigation__link" href="#about-me">About Me</a>
+          <a id="submenu" class="mdl-navigation__link">Portfolio</a>
         </nav>
+
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+            for="submenu">
+          <li id="unitrans_link" class="mdl-menu__item"><a href="#unitrans">Unitrans</a></li>
+          <li id="school_link" class="mdl-menu__item"><a href="#school">Class Projects</a></li>
+          <li id="personal_link" class="mdl-menu__item"><a href="#personal">Personal</a></li>
+        </ul>
+
       </div>
 
 
@@ -67,6 +45,10 @@
 
           <p> I'm <b>Haley</b>, and I also go by <b>Ley</b>.</p>
           <p>I like [comics]() , [video games]() and [movies](), but my passion is coding.</p>
+
+          <a href="#">Resume</a>
+          <p>Phone: (530) 601 - 3730</p>
+          <p>Email: haleyfsanders@gmail.com </p>
         </div>
 
         <div id="portfolio">

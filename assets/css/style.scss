@@ -3,29 +3,63 @@
 
 @import "{{ site.theme }}";
 
-body,html{
+// Cell Phone
+html, body{
 	height:100%;
+	width:100%;
 	background-color:#13293D;
+	p{
+		font-family: 'Dosis', sans-serif;
+	}
+
+	h2{
+		font-family: 'Dosis', sans-serif;
+		text-align: center;
+		color:black;
+		font-size: 40px;
+	}
+
+}
+
+.mdl-layout__container{
+	height:100%;
 }
 
 .mdl-layout{
 	background-image:url("../../assets/images/portfolio_background.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 50px;
+	height: 100%;
+	width:100%;
 	background-color:#13293D;
 }
-
 
 div.mdl-layout__drawer{
 	position:fixed;
 	background-color:#13293D;
-	width:25%;
+	width:50%;
+	height:100%
+}
+
+div.mdl-layout__drawer-button {
+
+	position:fixed;
+
+	i {
+		color:white;
+		
+	}
+}
+
+div.mdl-layout__obfuscator{
+	height:100%;
+	position:fixed;
 }
 
 .main-content{
 	position:relative;
-	left:13%;
+	left:10%;
+	color:black;
 }
 
 nav.mdl-navigation {
@@ -37,139 +71,585 @@ nav.mdl-navigation {
 	}
 }
 
+.sub-head{
+	text-align: center;
+	color:grey;
+}
+
 
 #about-me.mdl-card{
 	background-color: #7AC4A3;
-	width:700px;
+	width:90%;
 	margin-bottom:5%;
+
+	h2{
+		color: #13293D;
+		font-size:30px;
+	}
+
+	p{
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+div#portfolio{
+	width:100%;
+	height:100%;
+}
+
+
+div.portfolio_section{
+	height:100%;
+	width:100%;
+	position:relative;
+	text-align: center;
+	float:left;
+}
+
+h2.section_title{
+	color:black;
+	position:relative;
+}
+
+
+div.project {
+	background-color:#7AC4A3;
+	// margin-right:10px;
+	margin-bottom:5%;
+	height: 10%;
+	width: 90%;
+	// text-align: justify;
+	// word-wrap:normal;
+	padding: 25px;
+	float:left;
+
 }
 
 h1.project-name{
 	color:white;
 	text-align: center;
 	margin-top: 100px;
-	font-size:50px;
-}
-
-div#portfolio{
-	width:725px;
-	height:1000px;
-}
-
-div.portfolio_section{
-	margin-bottom:100px;
-}
-
-div#unitrans{
-	height:700px;
-}
-
-div#personal{
-	height:700px;
-}
-
-div#school{
-	height:700px;
-}
-
-.sub-head{
-	text-align: center;
-	color:grey;
-}
-
-.main-content{
-	color:black;
-}
-
-h2{
-	text-align: center;
-	color:black;
-	font-family: 'VT323', monospace;
-	font-size: 60px;
-}
-
-h2#about-me{
-	color: #13293D;
-	font-size:30px;
-}
-
-p{
-	font-family: 'Dosis', sans-serif;
-	color:black;
-	font-size: 20px;
-	text-align: center;
-}
-
-span {
-	color: black;
-}
-
-span.site-footer-credits{
-	color:black;
-}
-
-span > a{
-	color:#0B1D51;
-	font-size: 20px;
-    width: 200px;
-}
-
-a:hover {
-	color:white;
-}
-
-b.divider {
-	color:#084C61;
-	font-size:40px;
+	font-size:25px;
 }
 
 h3.project-header{
 	font-size:15px;
 	color: #13293D;
-}
 
-div.project {
-	background-color:#7AC4A3;
-	margin-right:10px;
-	margin-bottom:10px;
-	height: 350px;
-	width: 350px;
-	text-align: justify;
-	word-wrap:normal;
-	padding: 25px;
-	float:left;
-}
-
-h2.section_title{
-	color:black;
-}
-
-#intro-section{
-	color:#320A28;
-	background-color:#EEC643;
-	border-radius: 50px 15px;
-	border-style: solid;
-	margin-left: 10%;
-	margin-right: 20%;
-	height: 500px;
-	width: 800px;
-	padding: 50px;
-}
-
-
-#intro {
-	margin-top:10px;
-}
-
-.active {
-    background-color: #4CAF50;
-    color: white;
+	a{
+		color:#13293D;
+		text-align:center;
+	}
 }
 
 .site-footer {
 	margin-top:20%;
-	width:500px;
+	width:90%;
+	left:5%;
 	position:relative;
-	left:50%;
-	text-align:center;
+
+	span{
+		color:black;
+	}
+
+	span.site-footer-credits{
+		color:black;
+	}
+
+	span > a{
+		color:#0B1D51;
+		font-size: 15px;
+	    width: 200px;
+	}
+
+	a:hover {
+		color:white;
+	}
 }
+
+//Tablet
+@media only screen and (min-width: 501px){
+	.mdl-layout__container{
+		height:100%;
+	}
+
+	.mdl-layout{
+		background-image:url("../../assets/images/portfolio_background.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 100%;
+		width:100%;
+		background-color:#13293D;
+	}
+
+	div.mdl-layout__drawer{
+		position:fixed;
+		background-color:#13293D;
+		width:30%;
+		height:100%
+	}
+
+	div.mdl-layout__drawer-button {
+
+		position:fixed;
+
+		i {
+			color:white;
+			
+		}
+	}
+
+	div.mdl-layout__obfuscator{
+		height:100%;
+		position:fixed;
+	}
+
+	.main-content{
+		position:relative;
+		left:10%;
+		color:black;
+	}
+
+	nav.mdl-navigation {
+		
+		a.mdl-navigation__link{
+			font-size:15px;
+			text-decoration:none;
+			color:white;
+		}
+	}
+
+	.sub-head{
+		text-align: center;
+		color:grey;
+	}
+
+
+	#about-me.mdl-card{
+		background-color: #7AC4A3;
+		width: 90%;
+		margin-bottom:5%;
+
+		h2{
+			color: #13293D;
+			font-size:30px;
+		}
+
+		p{
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+
+	div#portfolio{
+		width:100%;
+		height:100%;
+	}
+
+
+	div.portfolio_section{
+		height:100%;
+		width:100%;
+		position:relative;
+		text-align: center;
+		float:left;
+	}
+
+	h2.section_title{
+		color:black;
+		position:relative;
+	}
+
+
+	div.project {
+		background-color:#7AC4A3;
+		// margin-right:10px;
+		margin-bottom:5%;
+		height: 10%;
+		width: 90%;
+		// text-align: justify;
+		// word-wrap:normal;
+		padding: 25px;
+		float:left;
+
+	}
+
+	h1.project-name{
+		color:white;
+		text-align: center;
+		margin-top: 100px;
+		font-size:25px;
+	}
+
+	h3.project-header{
+		font-size:15px;
+		color: #13293D;
+
+		a{
+			color:#13293D;
+			text-align:center;
+		}
+	}
+
+	.site-footer {
+		margin-top:20%;
+		width:90%;
+		left:5%;
+		position:relative;
+
+		span{
+			color:black;
+		}
+
+		span.site-footer-credits{
+			color:black;
+		}
+
+		span > a{
+			color:#0B1D51;
+			font-size: 15px;
+		    width: 200px;
+		}
+
+		a:hover {
+			color:white;
+		}
+	}
+
+}
+
+// Desktop
+@media only screen and (min-width: 834px) {
+
+	div.mdl-layout__drawer{
+		position:fixed;
+		background-color:#13293D;
+		width:25%;
+	}
+
+	.main-content{
+		position:relative;
+		left:5%;
+	}
+
+	nav.mdl-navigation {
+		
+		a.mdl-navigation__link{
+			font-size:15px;
+			text-decoration:none;
+			color:white;
+		}
+	}
+
+	#about-me.mdl-card{
+		background-color: #7AC4A3;
+		width:700px;
+		margin-bottom:5%;
+	}
+
+	h1.project-name{
+		color:white;
+		text-align: center;
+		margin-top: 100px;
+		font-size:50px;
+	}
+
+	div#portfolio{
+		width:725px;
+		height:1000px;
+	}
+
+	div.portfolio_section{
+		margin-bottom:100px;
+	}
+
+	div#unitrans{
+		height:700px;
+	}
+
+	div#personal{
+		height:700px;
+	}
+
+	div#school{
+		height:700px;
+	}
+
+	.sub-head{
+		text-align: center;
+		color:grey;
+	}
+
+	.main-content{
+		color:black;
+	}
+
+	h2{
+		text-align: center;
+		color:black;
+		font-family: 'VT323', monospace;
+		font-size: 60px;
+	}
+
+	h2#about-me{
+		color: #13293D;
+		font-size:30px;
+	}
+
+	p{
+		font-family: 'Dosis', sans-serif;
+		color:black;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	span {
+		color: black;
+	}
+
+	span.site-footer-credits{
+		color:black;
+	}
+
+	span > a{
+		color:#0B1D51;
+		font-size: 20px;
+	    width: 200px;
+	}
+
+	a:hover {
+		color:white;
+	}
+
+	b.divider {
+		color:#084C61;
+		font-size:40px;
+	}
+
+	h3.project-header{
+		font-size:15px;
+		color: #13293D;
+		white-space:pre !important;
+
+		a{
+			color:#13293D;
+			text-align:center;
+		}
+	}
+
+	div.project {
+		background-color:#7AC4A3;
+		margin-right:10px;
+		margin-bottom:10px;
+		height: 350px;
+		width: 350px;
+		text-align: justify;
+		word-wrap:normal;
+		padding: 25px;
+		float:left;
+	}
+
+	h2.section_title{
+		color:black;
+	}
+
+	#intro-section{
+		color:#320A28;
+		background-color:#EEC643;
+		border-radius: 50px 15px;
+		border-style: solid;
+		margin-left: 10%;
+		margin-right: 20%;
+		height: 500px;
+		width: 800px;
+		padding: 50px;
+	}
+
+
+	#intro {
+		margin-top:10px;
+	}
+
+	.active {
+	    background-color: #4CAF50;
+	    color: white;
+	}
+
+	.site-footer {
+		margin-top:20%;
+		width:500px;
+		position:relative;
+		left:25%;
+		text-align:center;
+	}
+}
+
+
+//Bigger Desktop
+@media only screen and (min-width: 1002px) {
+
+	div.mdl-layout__drawer{
+		position:fixed;
+		background-color:#13293D;
+		width:20%;
+	}
+
+	.main-content{
+		position:relative;
+		left:10%;
+	}
+
+	nav.mdl-navigation {
+		
+		a.mdl-navigation__link{
+			font-size:15px;
+			text-decoration:none;
+			color:white;
+		}
+	}
+
+	#about-me.mdl-card{
+		background-color: #7AC4A3;
+		width:700px;
+		margin-bottom:5%;
+	}
+
+	h1.project-name{
+		color:white;
+		text-align: center;
+		margin-top: 100px;
+		font-size:50px;
+	}
+
+	div#portfolio{
+		width:725px;
+		height:1000px;
+	}
+
+	div.portfolio_section{
+		margin-bottom:100px;
+	}
+
+	div#unitrans{
+		height:700px;
+	}
+
+	div#personal{
+		height:700px;
+	}
+
+	div#school{
+		height:700px;
+	}
+
+	.sub-head{
+		text-align: center;
+		color:grey;
+	}
+
+	.main-content{
+		color:black;
+	}
+
+	h2{
+		text-align: center;
+		color:black;
+		font-family: 'VT323', monospace;
+		font-size: 60px;
+	}
+
+	h2#about-me{
+		color: #13293D;
+		font-size:30px;
+	}
+
+	p{
+		font-family: 'Dosis', sans-serif;
+		color:black;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	span {
+		color: black;
+	}
+
+	span.site-footer-credits{
+		color:black;
+	}
+
+	span > a{
+		color:#0B1D51;
+		font-size: 20px;
+	    width: 200px;
+	}
+
+	a:hover {
+		color:white;
+	}
+
+	b.divider {
+		color:#084C61;
+		font-size:40px;
+	}
+
+	h3.project-header{
+		font-size:15px;
+		color: #13293D;
+		white-space:pre !important;
+
+		a{
+			color:#13293D;
+			text-align:center;
+		}
+	}
+
+	div.project {
+		background-color:#7AC4A3;
+		margin-right:10px;
+		margin-bottom:10px;
+		height: 350px;
+		width: 350px;
+		text-align: justify;
+		word-wrap:normal;
+		padding: 25px;
+		float:left;
+	}
+
+	h2.section_title{
+		color:black;
+	}
+
+	#intro-section{
+		color:#320A28;
+		background-color:#EEC643;
+		border-radius: 50px 15px;
+		border-style: solid;
+		margin-left: 10%;
+		margin-right: 20%;
+		height: 500px;
+		width: 800px;
+		padding: 50px;
+	}
+
+
+	#intro {
+		margin-top:10px;
+	}
+
+	.active {
+	    background-color: #4CAF50;
+	    color: white;
+	}
+
+	.site-footer {
+		margin-top:20%;
+		width:500px;
+		position:relative;
+		left:45%;
+		text-align:center;
+	}
+}
+
+

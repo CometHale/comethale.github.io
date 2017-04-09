@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 
+
 // Cell Phone
 html, body{
 	height:100%;
@@ -91,6 +92,28 @@ nav.mdl-navigation {
 		font-size: 20px;
 		text-align: center;
 	}
+
+	a {
+		color:#283C4E;
+		text-decoration: none;
+
+	}
+
+	a:hover{
+		color:grey;
+	}
+
+	#resume_link{
+		text-align: center;
+		margin-bottom: 10px;
+		color:#283C4E;
+		font-weight: bold;
+	}
+
+	#resume_link:hover{
+		color:grey;
+	}
+
 }
 
 div#portfolio{
